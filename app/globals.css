@@ -49,6 +49,44 @@
 }
 
 @layer base {
+  :root {
+    /* Shadcn */
+    --background: var(--color-brand-background);
+    --foreground: var(--color-brand-primary);
+
+    --card: var(--color-brand-background);
+    --card-foreground: var(--color-brand-primary);
+
+    --popover: var(--color-brand-background);
+    --popover-foreground: var(--color-brand-primary);
+
+    --primary: var(--color-brand-primary);
+    --primary-foreground: var(--color-text-white);
+
+    --secondary: var(--color-brand-other-blue);
+    --secondary-foreground: var(--color-text-white);
+
+    --muted: var(--color-brand-divider);
+    --muted-foreground: var(--color-text-secondary);
+
+    --accent: var(--color-brand-accent);
+    --accent-foreground: var(--color-brand-primary);
+
+    --destructive: var(--color-danger);
+    --destructive-foreground: var(--color-text-white);
+
+    --border: var(--color-brand-divider);
+    --input: var(--color-brand-divider);
+    --ring: var(--color-brand-primary);
+    
+    --radius: var(--radius-brand);
+  }
+
+  .dark {
+    --background: var(--color-brand-primary);
+    --foreground: var(--color-text-white);
+  }
+  
   body {
     background-color: var(--color-brand-background);
     color: var(--color-text-primary);

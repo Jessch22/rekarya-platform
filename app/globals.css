@@ -1,14 +1,17 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @theme {
   /* Color */
   --color-brand-primary: #022135;
   --color-brand-accent: #29AE45;
   --color-brand-background: #F8FAFC;
+  --color-brand-divider: #E2E8F0;
+
+  --color-brand-yellow: #FFD700;
   --color-brand-other-green: #1E7D32;
   --color-brand-other-blue: #014068;
-  --color-brand-divider: #E2E8F0;
-  --color-brand-yellow: #FFD700;
 
   /* Text color */
   --color-text-primary: #022135;
@@ -63,6 +66,15 @@
   section { 
     padding-left: var(--spacing-gap-80);
     padding-right: var(--spacing-gap-80);
+    padding-top: var(--spacing-gap-24);
+    padding-bottom: var(--spacing-gap-24);
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding-left: var(--spacing-gap-24);
+      padding-right: var(--spacing-gap-24);
+    }
   }
 }
 

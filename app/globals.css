@@ -1,27 +1,14 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
-
-@custom-variant dark (&:is(.dark *));
 
 @theme {
   /* Color */
   --color-brand-primary: #022135;
   --color-brand-accent: #29AE45;
   --color-brand-background: #F8FAFC;
-  --color-brand-divider: #E2E8F0;
-
-  --color-brand-yellow: #FFD700;
   --color-brand-other-green: #1E7D32;
   --color-brand-other-blue: #014068;
-
-  /* SHADCN/UI */
-  --color-background: var(--color-brand-background);
-  --color-foreground: var(--color-brand-primary);
-  --color-primary: var(--color-brand-primary);
-  --color-primary-foreground: var(--color-brand-background);
-  --color-accent: var(--color-brand-accent);
-  --color-border: var(--color-brand-primary);
+  --color-brand-divider: #E2E8F0;
+  --color-brand-yellow: #FFD700;
 
   /* Text color */
   --color-text-primary: #022135;
@@ -63,7 +50,7 @@
     background-color: var(--color-brand-background);
     color: var(--color-text-primary);
     font-family: var(--font-brand);
-    @apply antialiased bg-background text-foreground;
+    @apply antialiased;
   }
 
   h1 { @apply text-[48px] font-bold; }
@@ -76,12 +63,6 @@
   section { 
     padding-left: var(--spacing-gap-80);
     padding-right: var(--spacing-gap-80);
-  }
-  * {
-    @apply border-border outline-ring/50;
-  }
-  html {
-    @apply font-sans;
   }
 }
 

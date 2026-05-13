@@ -1,3 +1,5 @@
-export function Navbar() {
-  return <nav></nav>
+export function Navbar(){
+  return (
+    <nav></nav>
+  );
 }

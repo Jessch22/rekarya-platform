@@ -9,7 +9,7 @@ const sosmed: {title:string, icon:string, link:string, }[] = [
 
 export function Footer() {
   return (
-    <footer className="w-full">
+    <footer className="w-full shadow-[0_-2px_8px_2px_var(--tw-shadow-color)] shadow-brand-primary/10">
       <div className="flex flex-col px-gap-80 py-gap-24 gap-gap-16 items-center justify-center">
         {/* Logo */}
         <div className="relative w-65 h-15">

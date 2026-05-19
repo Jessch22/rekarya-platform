@@ -24,7 +24,7 @@ const isiNavbar = [
 export function Navbar(){
 
   return (
-    <header className="sticky top-0 w-full flex items-center justify-between px-gap-24 md:px-gap-80 py-gap-16 bg-brand-background/95 drop-shadow-sm shadow-brand-primary">
+    <header className="sticky top-0 w-full flex items-center justify-between px-gap-24 md:px-gap-80 py-gap-16 bg-brand-background/95 drop-shadow-sm shadow-brand-primary z-100 mb-gap-24">
 
       {/* LOGO */}
       <div className="relative w-66 md:w-60 h-15">

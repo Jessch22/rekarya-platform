@@ -24,7 +24,7 @@ const isiNavbar = [
 export function Navbar(){
 
   return (
-    <header className="sticky top-0 w-full flex items-center justify-between px-gap-24 md:px-gap-80 py-gap-16 bg-brand-background/95">
+    <header className="sticky top-0 w-full flex items-center justify-between px-gap-24 md:px-gap-80 py-gap-16 bg-brand-background/95 drop-shadow-sm shadow-brand-primary">
 
       {/* LOGO */}
       <div className="relative w-66 md:w-60 h-15">
@@ -34,7 +34,7 @@ export function Navbar(){
       </div>
       
       {/* NAVIGATION DESKTOP*/}
-      <div className="hidden md:flex items-center gap-gap-24 md:gap-gap-48 ">
+      <div className="hidden md:flex items-center gap-gap-24 md:gap-gap-48">
         <NavigationMenu>
           <NavigationMenuList>
             {isiNavbar.map((isi) => (
